@@ -130,32 +130,32 @@ class RobotAuxiliaryUI(QMainWindow):
     # Hardware interface functions - replace with your actual hardware control
     def activate_air_supply(self):
         """Send command to activate air supply"""
-        #setRelayCh(0,1,1)
+        setRelayCh(0,1,1)
         pass
     
     def deactivate_air_supply(self):
         """Send command to deactivate air supply"""
-        #setRelayCh(0,1,0)
+        setRelayCh(0,1,0)
         pass
     
     def activate_vacuum(self):
         """Send command to activate vacuum/dust collection"""
-        #setRelayCh(0,2,1)
+        setRelayCh(0,2,1)
         pass
     
     def deactivate_vacuum(self):
         """Send command to deactivate vacuum"""
-        #setRelayCh(0,2,1)
+        setRelayCh(0,2,1)
         pass
     
     def activate_laser(self):
         """Send command to turn on laser cleaner"""
-        #setRelayCh(0,3,1)
+        setRelayCh(0,3,1)
         pass
     
     def deactivate_laser(self):
         """Send command to turn off laser cleaner"""
-        #setRelayCh(0,3,0)
+        setRelayCh(0,3,0)
         pass
     
     def rotate_stepper(self, degrees):
