@@ -145,7 +145,7 @@ class RobotAuxiliaryUI(QMainWindow):
     
     def deactivate_vacuum(self):
         """Send command to deactivate vacuum"""
-        lp.setRelayCh(0,2,1)
+        lp.setRelayCh(0,2,0)
         pass
     
     def activate_laser(self):
