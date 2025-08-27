@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QCheckBox
 from PyQt5.QtCore import QTimer, pyqtSignal
 from aux_test_ui import Ui_MainWindow  # Your exported UI file
 import time
-import libioplus
+import libioplus as lp
 
 class RobotAuxiliaryUI(QMainWindow):
     def __init__(self):
@@ -130,32 +130,32 @@ class RobotAuxiliaryUI(QMainWindow):
     # Hardware interface functions - replace with your actual hardware control
     def activate_air_supply(self):
         """Send command to activate air supply"""
-        setRelayCh(0,1,1)
+        lp.setRelayCh(0,1,1)
         pass
     
     def deactivate_air_supply(self):
         """Send command to deactivate air supply"""
-        setRelayCh(0,1,0)
+        lp.setRelayCh(0,1,0)
         pass
     
     def activate_vacuum(self):
         """Send command to activate vacuum/dust collection"""
-        setRelayCh(0,2,1)
+        lp.setRelayCh(0,2,1)
         pass
     
     def deactivate_vacuum(self):
         """Send command to deactivate vacuum"""
-        setRelayCh(0,2,1)
+        lp.setRelayCh(0,2,1)
         pass
     
     def activate_laser(self):
         """Send command to turn on laser cleaner"""
-        setRelayCh(0,3,1)
+        lp.setRelayCh(0,3,1)
         pass
     
     def deactivate_laser(self):
         """Send command to turn off laser cleaner"""
-        setRelayCh(0,3,0)
+        lp.setRelayCh(0,3,0)
         pass
     
     def rotate_stepper(self, degrees):
