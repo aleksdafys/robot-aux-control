@@ -93,12 +93,12 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.plus_5_deg_button.setText(_translate("MainWindow", "+5 deg"))
+        self.plus_5_deg_button.setText(_translate("MainWindow", "Up"))
         self.laser_button.setText(_translate("MainWindow", "Laser On"))
-        self.air_out_button.setText(_translate("MainWindow", "Air Out"))
-        self.disco_button.setText(_translate("MainWindow", "WEEEEEEEE"))
-        self.air_in_button.setText(_translate("MainWindow", "Air In"))
-        self.minus_5_deg_button.setText(_translate("MainWindow", "-5 deg"))
+        self.air_out_button.setText(_translate("MainWindow", "Back"))
+        self.disco_button.setText(_translate("MainWindow", "Forward"))
+        self.air_in_button.setText(_translate("MainWindow", "Air Supply"))
+        self.minus_5_deg_button.setText(_translate("MainWindow", "Down"))
         self.menuAUX_TEST.setTitle(_translate("MainWindow", "AUX TEST"))
 
 
