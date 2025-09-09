@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QCheckBox, Q
 from PyQt5.QtCore import QTimer, pyqtSignal, Qt
 from PyQt5.QtGui import QFont, QPalette, QColor
 import time
+import libioplus as lp
 
 class RobotAuxiliaryUI(QMainWindow):
     def __init__(self):
