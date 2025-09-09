@@ -22,11 +22,11 @@ class RobotAuxiliaryUI(QMainWindow):
         
         # Hardware configuration - map auxiliary numbers to hardware functions
         self.aux_config = {
-            1: {"name": "Air Supply", "function": self.control_air_supply},
-            2: {"name": "Vacuum", "function": self.control_vacuum},
-            3: {"name": "Laser", "function": self.control_laser},
-            4: {"name": "Coolant", "function": self.control_coolant},
-            5: {"name": "Spindle", "function": self.control_spindle},
+            1: {"name": "In", "function": self.control_air_supply},
+            2: {"name": "Out", "function": self.control_vacuum},
+            3: {"name": "Up", "function": self.control_laser},
+            4: {"name": "Down", "function": self.control_coolant},
+            5: {"name": "Air In", "function": self.control_spindle},
             6: {"name": "Dust Collection", "function": self.control_dust_collection},
             7: {"name": "Work Light", "function": self.control_work_light},
             8: {"name": "Probe", "function": self.control_probe}
