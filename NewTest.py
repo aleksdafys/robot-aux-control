@@ -304,58 +304,73 @@ class RobotAuxiliaryUI(QMainWindow):
         """Control air supply system"""
         if state:
             print("  🌬️  Activating air supply...")
-            # Your hardware control code here
+            lp.setRelayCh(0,1,1)
         else:
             print("  🌬️  Deactivating air supply...")
+            lp.setRelayCh(0,1,0)
     
     def control_vacuum(self, state):
         """Control vacuum/dust collection"""
         if state:
             print("  💨 Activating vacuum system...")
+            lp.setRelayCh(0,2,1)
         else:
             print("  💨 Deactivating vacuum system...")
+            lp.setRelayCh(0,2,0)
     
     def control_laser(self, state):
         """Control laser system"""
         if state:
             print("  🔴 Activating laser - SAFETY PROTOCOLS ACTIVE...")
+            lp.setRelayCh(0,3,1)
         else:
             print("  🔴 Deactivating laser...")
+            lp.setRelayCh(0,3,0)
     
     def control_coolant(self, state):
         """Control coolant system"""
         if state:
             print("  💧 Activating coolant flow...")
+            lp.setRelayCh(0,4,1)
         else:
             print("  💧 Stopping coolant flow...")
+            lp.setRelayCh(0,4,0)
     
     def control_spindle(self, state):
         """Control spindle motor"""
         if state:
             print("  ⚙️  Starting spindle motor...")
+            lp.setRelayCh(0,5,1)
         else:
             print("  ⚙️  Stopping spindle motor...")
+            lp.setRelayCh(0,5,0)
     
     def control_dust_collection(self, state):
         """Control dust collection system"""
         if state:
             print("  🌪️  Activating dust collection...")
+            lp.setRelayCh(0,6,1)
         else:
             print("  🌪️  Deactivating dust collection...")
+            lp.setRelayCh(0,6,0)
     
     def control_work_light(self, state):
         """Control work area lighting"""
         if state:
             print("  💡 Turning on work lights...")
+            lp.setRelayCh(0,7,1)
         else:
             print("  💡 Turning off work lights...")
+            lp.setRelayCh(0,7,0)
     
     def control_probe(self, state):
         """Control probe system"""
         if state:
             print("  📏 Activating probe system...")
+            lp.setRelayCh(0,8,1)
         else:
             print("  📏 Deactivating probe system...")
+            lp.setRelayCh(0,8,0)
     
     def rotate_stepper(self, degrees):
         """Send command to rotate stepper motor by specified degrees"""
